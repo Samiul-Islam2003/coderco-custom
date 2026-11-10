@@ -1,18 +1,16 @@
-name: coderco custom action
-
-description: Greet someone
+name: 'Coderco Custom Action'
+description: 'A custom greeting action'
 
 inputs:
   who-to-greet:
     description: 'Who to greet'
     required: true
-    default: "Hello"
+    default: 'World'
 
-  outputs:
-    time:
-      description: 'The time we greeted you'
+outputs:
+  time:
+    description: 'The time the greeting was made'
 
-
-    runs:
-      using: node 20
-      main: dist/index.js
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
